@@ -1,0 +1,14 @@
+---
+configuration:
+    datasource_url:
+        name: Datasource URL
+        description: >-
+            Postgres Datasource URL, in the format <HOST>/<DB_SCHEMA>
+    datasource_username:
+        name: Datasource Username
+        description: >-
+            Postgres Datasource Username
+    datasource_pwd:
+        name: Datasource Password
+        description: >-
+            Postgres Datasource Password
