@@ -1,6 +1,6 @@
 name: "Medicines App"
 description: "Medicines App"
-version: "1.0.0"
+version: "1.0.1"
 slug: "medicines"
 init: false
 arch:
