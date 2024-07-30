@@ -12,6 +12,7 @@ RUN \
   && mkdir -p /run/nginx
 
 RUN apk add openjdk21
+RUN apk add postgresql-client
 RUN rm -fr /tmp/*
 RUN rm -fr /etc/nginx
 
