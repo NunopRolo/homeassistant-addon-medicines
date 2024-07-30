@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
-DATASOURCE_URL="jdbc:postgresql://$(bashio::config 'datasource_url')"
+DATASOURCE_URL="jdbc:postgresql://$(bashio::config 'datasource_url')?createDatabaseIfNotExist=true"
 DATASOURCE_USERNAME="$(bashio::config 'datasource_username')"
 DATASOURCE_PWD="$(bashio::config 'datasource_pwd')"
 WEBCLIENT_URL="http://supervisor/core/api/services/persistent_notification/create"
