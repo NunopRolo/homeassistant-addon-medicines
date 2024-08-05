@@ -30,16 +30,18 @@ Medicines App is a web application to manage portuguese medicines, with the foll
   * Add day periods
   * Delete day periods
 
-## Requirements
-Postgres database instance, for example: [Postgres Addon](https://github.com/alexbelgium/hassio-addons/tree/master/postgres)
-
 ## Configuration
+There are two database options to run this application, with SQLite, and with Postgres. 
 
+If you want to use Postgres, you need to configure the following variables. If these variables are not filled in, the application will default to SQLite as the database system.
 ```yaml
 DATASOURCE_URL: <postgres_host>/<database_schema>
 DATASOURCE_USERNAME: username
 DATASOURCE_PWD: password
 ```
+
+## Requirements
+If you want to run the application with Postgres, you need to have a Postgres database instance, for example: [Postgres Addon](https://github.com/alexbelgium/hassio-addons/tree/master/postgres)
 
 ## Installation
 The installation of this add-on is pretty straightforward and not different in comparison to installing any other add-on.

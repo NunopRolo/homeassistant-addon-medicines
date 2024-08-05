@@ -1,6 +1,6 @@
 name: "Medicines App"
 description: "Medicines App"
-version: "1.0.3"
+version: "1.0.4"
 slug: "medicines"
 init: false
 arch:
@@ -13,13 +13,9 @@ startup: services
 homeassistant_api: true
 ports:
   8100/tcp: 8100
-options:
-  datasource_url: 
-  datasource_username: 
-  datasource_pwd: 
 schema:
-  datasource_url: str
-  datasource_username: str
-  datasource_pwd: password
+  datasource_url: str?
+  datasource_username: str?
+  datasource_pwd: password?
 ingress: true
 ingress_port: 8100
